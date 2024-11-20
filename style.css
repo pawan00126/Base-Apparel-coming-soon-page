@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Josefin Sans */
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: space-between;
+    font-family: Josefin Sans;
+
+    background-image: url("bg-pattern-desktop.svg");
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* border:6px solid red; */
+    padding-left:10%;
+
+
+    
+
+}
+
+
+
+.logo img{
+    height: 50px;
+}
+
+.middle{
+    /* border:2px solid red; */
+    margin-bottom: 20%;
+}
+
+h1{
+    letter-spacing: 8px;
+    line-height: 80px;
+    font-size:4rem;
+    /* border: 5px solid purple; */
+
+    padding-right: 35%;
+
+    font-weight: 400;
+
+    
+    
+
+}
+
+.h1-left{
+    color:orangered;
+    font-weight: 200;
+
+    color:hsl(0, 36%, 70%);
+}
+
+.text{
+    /* border: 4px solid black; */
+    padding-right:27%;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    color:hsl(0, 36%, 70%)
+    /* color: hsl(0, 6%, 24%) */
+}
+
+
+.input{
+    /* border: 4px solid red; */
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+
+    /* color: red; */
+
+    
+}
+
+.input input{
+    height: 40px;
+    width:50%;
+    border: 2px solid rgb(252, 155, 155);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1.2rem;
+
+    /* color: red; */
+
+}
+
+#error{
+    position: absolute;
+    left:39%;
+    margin-top: 10px;
+    display: none;
+}
+
+#check-email{
+    background-color: hsl(0, 93%, 68%);
+    height:50px;
+    border-radius: 25px;
+    padding:10px 35px;
+    /* margin-top: 2px; */
+    position: absolute;
+    left:43%;
+    bottom:-2px;
+
+    box-shadow: 1px 5px 10px hsl(0, 68%, 75%);
+
+    cursor:pointer;
+
+    z-index: 1000;
+
+
+
+}
+
+#check-email:hover{
+    background-color: hsl(0, 80%, 77%);
+}

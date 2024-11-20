@@ -1,0 +1,78 @@
+<!-- 
+
+  
+
+  Email Address -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I am Title</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="left">
+        <div class="logo">
+            <img src="logo.svg" alt="">
+        </div>
+
+
+        <div class="middle">
+
+
+            <h1>
+                <div class="h1-left">WE'RE</div> COMING SOON
+            </h1>
+
+            <div class="text">
+                Hello fellow shoppers! We're currently building our new fashion store.Add your email below to stay
+                up-to-date with announcements and our launch deals.
+            </div>
+
+
+            <div class="input">
+                <input type="email" name="" id="email" placeholder="Email-Address">
+                <img src="icon-error.svg" alt="" id="error">
+                <div><img src="icon-arrow.svg" alt="" id="check-email"></div>
+            </div>
+
+
+        </div>
+
+        
+    </div>
+
+    <div class="right">
+        <img src="hero-desktop.jpg" alt="">
+    </div>
+
+
+    <script>
+
+        document.getElementById("check-email").addEventListener("click", function(){
+            let input = document.getElementById("email");
+            let inputValue = document.getElementById("email").value;
+
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if(!emailPattern.test(inputValue)){
+                input.value = "";
+                document.getElementById("error").style.display="inline-block";
+            }
+
+            input.addEventListener("input", function(){
+                document.getElementById("error").style.display="none";
+            })
+        })
+    </script>
+</body>
+
+</html>
